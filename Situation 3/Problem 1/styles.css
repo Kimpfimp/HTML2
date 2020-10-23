@@ -1,0 +1,148 @@
+Body {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-right: 60px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper {
+    height: 100%;
+}
+
+#content {
+    width: 700px;
+    min-width: 700px;
+    padding: 50px;
+    background-color:cadetblue;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+}
+
+.link1 {
+    font-family: 'Oswald', sans-serif;
+    border: 1px white;
+    flex-basis: 50vw;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    font-size: 30px;
+    color: rebeccapurple;
+    border: 2px solid cadetblue;
+}
+
+.link {    
+    font-family: 'Oswald', sans-serif;
+    flex-basis: 50vw;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rebeccapurple;
+    cursor: pointer;
+    border: 2px solid cadetblue;
+}
+
+.link:hover {
+    cursor: pointer;
+    background-color: white;
+    background-image: none;
+}
+
+a {
+    background-color: rgba(255,255,255,0.7);
+}
+
+nav {
+    display: flex;
+    height: 10vh;
+    background-image: url(text.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid beige;
+    background-color: beige;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.Janisbilder {
+    display: flex;
+    justify-content: center;
+}
+
+.Janisbilder > img {
+    width: 25%;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.sista1 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: darkcyan;
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.sista {
+    font-family: 'Roboto', sans-serif;
+    background-color: skyblue;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.sidfot-p {
+    margin: 5px 0 5px 0;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+@media (max-width: 480px) {
+
+    #content {
+        width: 90vw;
+        min-width: auto;
+        padding: 1%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+   .Janisbilder {
+        display: grid;
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+    display: none;
+    }
+}

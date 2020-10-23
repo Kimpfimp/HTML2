@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    background-color: orange;
+    text-align: center;
+    font: 20px 'Roboto Condensed';
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.flag {
+    width: 160px;
+    margin: 30px;
+}
+
+.flagDiv {
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:800px) {
+    .all {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .countryName {
+        display: none;
+    }
+}

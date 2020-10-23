@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background-color: greenyellow;
+}
+
+.container {
+    display: grid;
+    margin: 50px;
+    width: 700px;
+    grid-template-columns: 233px 234px 233px;
+    grid-template-rows: 200px 350px 150px;
+    background-color: gold;
+}
+
+img, source{
+    width: 100%;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.jimi {
+    font-size: 30px;
+}
+
+.head {
+    grid-area: 1/1/2/4;
+}
+.footer {
+    grid-area: 3/1/4/4;
+}
+
+@media (max-width: 400px){
+    .container {
+	display: block;
+	width: 95vw;
+	margin: 10px;
+    }
+    img {
+	vertical-align: middle;
+    }
+}

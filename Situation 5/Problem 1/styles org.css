@@ -1,0 +1,158 @@
+body {
+    background-color: black;
+    margin: 0px;
+    overflow: hidden; 
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    height: 40vw;
+    padding: 85px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center; 
+}
+
+.text1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.text2 {
+    display: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.grid-item1 {  
+    height: auto;
+    width: 20vw;
+    background-image:url(Bilder/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-item2 {
+    height: auto;
+    width: 20vw;
+    background-image:url(Bilder/image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-item3 {
+    height: auto;
+    width: 20vw;
+    background-image:url(Bilder/image3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-item4 {
+    height: auto;
+    width: 20vw;
+    background-image:url(Bilder/image4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-item5 {
+    height: auto;
+    width: 20vw;
+    background-image:url(Bilder/image5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-item6 {
+    height: auto;
+    width: 20vw;
+    background-image:url(Bilder/image6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 500px) {
+
+    body {
+        overflow-y: visible;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 0;
+        width: 500px;
+    }
+
+    .text1 {
+        display: none;
+    }
+
+    .text2 {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;  
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 30px;
+        width: 460px; 
+    }
+
+    .grid-item1 {
+        display: grid;
+        background-size: cover;
+        background-position: center;
+        width: 500px;
+        height: 500px;
+    }  
+
+    .grid-item2 {
+        display: grid;
+        background-size: cover;
+        background-position: center;
+        width: 500px;
+        height: 500px;
+    }  
+
+    .grid-item3 {
+        display: grid;
+        background-size: cover;
+        background-position: center;
+        width: 500px;
+        height: 500px;
+    }  
+
+    .grid-item4 {
+        display: grid;
+        background-size: cover;
+        background-position: center;
+        width: 500px;
+        height: 500px;
+    }  
+
+    .grid-item5 {
+        display: grid;
+        background-size: cover;
+        background-position: center;
+        width: 500px;
+        height: 500px;
+    }  
+
+    .grid-item6 {
+        display: grid;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        width: 500px;
+        height: 500px;
+    }
+}
