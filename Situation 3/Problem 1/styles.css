@@ -131,13 +131,30 @@ footer {
     }
 
     nav {
-        display: flex;
         flex-direction: column;
+        background-image: url(text.jpg);
+        background-position: center;
+        background-repeat: repeat;
+        height: 200px;
+    }
+
+    .link,
+    .link1 {
+        font-size: 15px;
+        font-weight: bold;
     }
 
    .Janisbilder {
         display: grid;
-        width: 40%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Janisbilder img {
+        width: auto;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
     }
 }
 
